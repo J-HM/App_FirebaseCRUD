@@ -22,7 +22,6 @@ class PostAdapter(private val posts: ArrayList<PostData>) : RecyclerView.Adapter
     override fun getItemCount(): Int = posts.size
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        Log.d("jhmlog", "$position bind")
         holder.view.text_post_title.text = posts[position].title
         holder.view.text_post_content.text = posts[position].content
     }
